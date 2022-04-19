@@ -58,7 +58,7 @@ export class FooterComponent {
 				},
 				{
 					label: 'Código de conducta',
-					url: '#'
+					url: 'https://about.google/community-guidelines/'
 				},
 				{
 					label: 'Políticas de Privacidad',
