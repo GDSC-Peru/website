@@ -1,22 +1,22 @@
 .container {
   &__header {
     position: absolute;
+    width: 100%;
   }
 }
 
 .wrapper {
   background-image: url('./../../../assets/img/background-home.png');
-  height: 720px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
   width: 100%;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  @media screen and (max-width: 768px) {
-    height: 90vh;
-  }
 
   .title {
     font-size: 56px;
