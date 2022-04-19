@@ -13,8 +13,18 @@
     border-bottom: 1px solid #676C72;
     padding-bottom: 44px;
 
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      width: 80%;
+      padding-bottom: 0;
+    }
+
     .col {
       width: 100%;
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 32px;
+      }
 
       .title {
         font-weight: bold;
