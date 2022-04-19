@@ -14,6 +14,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { CoreModule } from './core/core.module';
+import { PagesModule } from './pages/pages.module';
+
 
 Sentry.init({
   dsn: environment.SENTRY_DNS,
@@ -48,7 +50,7 @@ const PROVIDERS = [
   },
 ];
 const COMPONENTS = [AppComponent];
-const IMPORTS = [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule, BrowserAnimationsModule, CoreModule];
+const IMPORTS = [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule, BrowserAnimationsModule, CoreModule,PagesModule];
 
 @NgModule({
   declarations: [...COMPONENTS],

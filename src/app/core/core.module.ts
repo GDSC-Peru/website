@@ -3,16 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { SharedModule } from '../shared/shared.module';
 
-import { AdminComponent } from './layouts/admin/admin.component';
 import { FooterComponent } from './components/admin/footer/footer.component';
 import { HeaderComponent } from './components/admin/header/header.component';
-import { SidebarComponent } from './components/admin/sidebar/sidebar.component';
 
-const CORE_COMPONENTS = [AdminComponent, HeaderComponent, FooterComponent, SidebarComponent];
+const CORE_COMPONENTS = [HeaderComponent, FooterComponent];
 const CORE_MODULES = [CommonModule, SharedModule];
 
 @NgModule({
-  declarations: [...CORE_COMPONENTS, FooterComponent, SidebarComponent, HeaderComponent ],
+  declarations: [...CORE_COMPONENTS],
   imports: [...CORE_MODULES],
+  exports: [...CORE_MODULES, ...CORE_COMPONENTS]
 })
 export class CoreModule {}

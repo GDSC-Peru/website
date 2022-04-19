@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  SENTRY_DNS: 'https://26101bb837504505ba2add30fefab4ae@o345480.ingest.sentry.io/5534195',
+  SENTRY_DNS: '',
   TRACKING_ORIGIN: [],
 };
 
