@@ -1,0 +1,54 @@
+.container {
+  &__header {
+    position: absolute;
+  }
+}
+
+.wrapper {
+  background-image: url('./../../../assets/img/background-home.png');
+  height: 720px;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .title {
+    font-size: 56px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 28px;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+
+  .action__button {
+    user-select: none;
+    padding: 8px 16px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-size: 24px;
+    color: white;
+
+    &:link {
+      text-decoration: none;
+    }
+
+    &:visited {
+      text-decoration: none;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:active {
+      text-decoration: none;
+    }
+  }
+}
