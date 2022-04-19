@@ -17,7 +17,7 @@
     "build:staging": "ng build --prod --configuration=staging",
     "build:prod": "ng build --prod --configuration=production",
     "generate:stats": "ng build --prod --stats-json",
-    "start:analyzer": "webpack-bundle-analyzer angular-boilerplate/stats.json",
+    "start:analyzer": "webpack-bundle-analyzerwebsite/stats.json",
     "analyzer": "npm run generate:stats && npm run start:analyzer"
   },
   "private": true,
