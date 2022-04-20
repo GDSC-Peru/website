@@ -22,7 +22,6 @@
         <p class="text">Los clubes de estudiantes de desarrolladores de Google (GDSC) son grupos comunitarios para
           estudiantes
           universitarios interesados ​​en las tecnologías de desarrollo de Google.</p>
-        <p class="text">Serán dos días llenos de talleres y sesiones en vivo.</p>
         <p class="text">Conoce más <a href="#">aquí</a>.</p>
       </div>
       <div class="statistics">
@@ -46,8 +45,60 @@
     </div>
     <div class="container__speakers">
     </div>
+    <div class="container__sponsors">
+      <h2 class="title">Sponsors</h2>
+      <p class="paragraph">¿Interesado en ser sponsor de este evento? Ponte en contacto con nosotros completando nuestro
+        formulario <a href="#">aquí</a>.
+      </p>
+      <h3 class="subtitle">Organizadores</h3>
+      <div class="box__organizer">
+        <div *ngFor="let item of organizer" class="organizer__item">
+          <a [href]="item.url">
+            <img class="item__img" [src]="item.img" [alt]="item.label" />
+          </a>
+        </div>
+      </div>
+      <div *ngFor="let sponsorsItem of sponsors" class="sponsors">
+        <h3 class="subtitle">{{sponsorsItem.title}}</h3>
+        <div class="box__sponsors">
+          <div *ngFor="let item of sponsorsItem.sponsorCollections" class="sponsors__item">
+            <a [href]="item.url">
+              <img class="item__img" [src]="item.img" [alt]="item.label" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
     <div class="container__slogan">
       <p class="slogan">¡Únete a este evento y aprende cosas nuevas!</p>
+    </div>
+    <div class="container__codeOfConduct">
+      <h2 class="title">Código de conducta</h2>
+      <div class="row">
+        <div class="paragraph">
+          <p class="text">El objetivo de las normas de la comunidad es fomentar el debate abierto y sano que siempre ha
+            formado parte
+            de nuestra cultura. Las siguientes directrices son una política oficial y se aplican a tus comunicaciones
+            con
+            otras personas en el entorno laboral.</p>
+          <p class="text"><span class="text__highlight">Sé responsable.</span> Todo lo que dices y haces es importante.
+            Eres responsable de tus palabras y
+            acciones.</p>
+          <p class="text"><span class="text__highlight">Sé constructivo.</span> Tu voz es tu contribución; haz que sea
+            productiva.</p>
+          <p class="text"><span class="text__highlight">Sé prudente.</span> Tus comentarios se pueden atribuir a Google
+            independientemente de cuál sea tu
+            intención, por
+            lo
+            que deberías procurar no hacer comentarios que puedan inducir a alguien a hacer suposiciones incorrectas.
+          </p>
+          <p class="text">Lee las normas de la comunidad <a href="#">aquí</a>.</p>
+        </div>
+        <div class="code__img">
+          <img src="./../../../assets/icons/logo_android.svg" alt="Logo Android" />
+        </div>
+      </div>
     </div>
   </div>
   <div class="container__footer">
