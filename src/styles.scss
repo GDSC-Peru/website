@@ -1,4 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --color-blue: #4285f4;
+  --color-green: #0f9d58;
+  --color-red: #ea4335;
+  --color-yellow: #fbbc04;
+  --color-black: #484a52;
+  --color-scrollbar-background: #f3f2f7;
+}
+
 @font-face {
   font-family: 'GoogleSans';
   src: url('./assets/fonts/GoogleSans-Regular.ttf') format('truetype');
@@ -7,4 +17,24 @@
 * {
   margin: 0;
   font-family: 'GoogleSans';  
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  background: var(--color-green);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-green);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  background: var(--color-scrollbar-background);
 }
