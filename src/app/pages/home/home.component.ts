@@ -56,4 +56,48 @@ export class HomeComponent {
 		}
 	];
 	constructor() {}
+
+	speakersCount: number = 0;
+
+	speakersCountStop: any = setInterval(() => {
+		this.speakersCount++;
+
+		if (this.speakersCount == 61) {
+			this.speakersCount = 0;
+		}
+
+	}, 100);
+
+	sponsorCount: number = 0;
+
+	sponsorCountStop: any = setInterval(() => {
+		this.sponsorCount++;
+
+		if (this.sponsorCount == 21) {
+			this.sponsorCount = 0;
+		}
+
+	}, 180);
+
+	ssesionesCount: number = 0;
+
+	ssesionesCountStop: any = setInterval(() => {
+		this.ssesionesCount++;
+
+		if (this.ssesionesCount == 31) {
+			this.ssesionesCount = 0;
+		}
+
+	}, 250);
+
+	daysCount: number = 0;
+
+	daysCountStop: any = setInterval(() => {
+		this.daysCount++;
+
+		if (this.daysCount == 3) {
+			this.daysCount = 0;
+		}
+
+	}, 300);
 }
