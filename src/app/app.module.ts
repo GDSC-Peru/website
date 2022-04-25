@@ -8,13 +8,15 @@ import { Router } from '@angular/router';
 import * as Sentry from '@sentry/angular';
 import { Integrations } from '@sentry/tracing';
 
-import { environment } from './../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { CoreModule } from './core/core.module';
 import { PagesModule } from './pages/pages.module';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideFunctions, getFunctions } from '@angular/fire/functions';
 
 
 Sentry.init({
@@ -44,21 +46,23 @@ const PROVIDERS = [
   },
   {
     provide: APP_INITIALIZER,
-    useFactory: () => () => {},
+    useFactory: () => () => { },
     deps: [Sentry.TraceService],
     multi: true,
   },
 ];
 const COMPONENTS = [AppComponent];
-const IMPORTS = [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule, BrowserAnimationsModule, CoreModule,PagesModule];
+const IMPORTS = [BrowserModule.withServerTransition({
+  appId: 'gdsc-website'
+}), AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule, BrowserAnimationsModule, CoreModule, PagesModule];
 
 @NgModule({
   declarations: [...COMPONENTS],
-  imports: [...IMPORTS],
+  imports: [...IMPORTS, provideFirebaseApp(() => initializeApp(environment.firebase)), provideFunctions(() => getFunctions())],
   providers: [...PROVIDERS],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
 
 enableProdMode();
 // platformBrowserDynamic()
