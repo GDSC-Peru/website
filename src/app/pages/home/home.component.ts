@@ -24,36 +24,36 @@ export class HomeComponent {
 		}
 	];
 	sponsors = [
-		{
-			title: 'Sponsors Oro',
-			sponsorCollections: [
-				{
-					label: 'Google Developer Students Club de la Universidad Nacional de Ingeniería',
-					img: './../../../assets/icons/logo_gdsc_utp.svg',
-					url: 'https://gdsc.community.dev/universidad-nacional-de-ingenieria/'
-				}
-			]
-		},
-		{
-			title: 'Sponsors Plata',
-			sponsorCollections: [
-				{
-					label: 'Google Developer Students Club de la Universidad Nacional de Ingeniería',
-					img: './../../../assets/icons/logo_gdsc_utp.svg',
-					url: 'https://gdsc.community.dev/universidad-nacional-de-ingenieria/'
-				}
-			]
-		},
-		{
-			title: 'Sponsors Bronce',
-			sponsorCollections: [
-				{
-					label: 'Google Developer Students Club de la Universidad Nacional de Ingeniería',
-					img: './../../../assets/icons/logo_gdsc_utp.svg',
-					url: 'https://gdsc.community.dev/universidad-nacional-de-ingenieria/'
-				}
-			]
-		}
+		// {
+		// 	title: 'Sponsors Oro',
+		// 	sponsorCollections: [
+		// 		{
+		// 			label: 'Google Developer Students Club de la Universidad Nacional de Ingeniería',
+		// 			img: './../../../assets/icons/logo_gdsc_utp.svg',
+		// 			url: 'https://gdsc.community.dev/universidad-nacional-de-ingenieria/'
+		// 		}
+		// 	]
+		// },
+		// {
+		// 	title: 'Sponsors Plata',
+		// 	sponsorCollections: [
+		// 		{
+		// 			label: 'Google Developer Students Club de la Universidad Nacional de Ingeniería',
+		// 			img: './../../../assets/icons/logo_gdsc_utp.svg',
+		// 			url: 'https://gdsc.community.dev/universidad-nacional-de-ingenieria/'
+		// 		}
+		// 	]
+		// },
+		// {
+		// 	title: 'Sponsors Bronce',
+		// 	sponsorCollections: [
+		// 		{
+		// 			label: 'Google Developer Students Club de la Universidad Nacional de Ingeniería',
+		// 			img: './../../../assets/icons/logo_gdsc_utp.svg',
+		// 			url: 'https://gdsc.community.dev/universidad-nacional-de-ingenieria/'
+		// 		}
+		// 	]
+		// }
 	];
 	constructor() {}
 }
