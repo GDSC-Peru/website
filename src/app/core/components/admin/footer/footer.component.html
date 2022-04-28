@@ -3,10 +3,11 @@
     <div class="col" *ngFor="let item of links">
       <p class="title">{{item.title }}</p>
       <ul class="list">
-        <li *ngFor="let link of item.linkCollections"><a class="link" [href]="link.url">{{ link.label }}</a></li>
-        <li><a class="link" href="item.linkCollections.url">{{ item.linkCollections.label }}</a></li>
-        <li><a class="link" href="item.linkCollections.url">{{ item.linkCollections.label }}</a></li>
-        <li><a class="link" href="item.linkCollections.url">{{ item.linkCollections.label }}</a></li>
+        <li *ngFor="let link of item.linkCollections"><a class="link" [href]="link.url"
+            target="_blank">{{ link.label }}</a></li>
+        <li><a class="link" href="item.linkCollections.url" target="_blank">{{ item.linkCollections.label }}</a></li>
+        <li><a class="link" href="item.linkCollections.url" target="_blank">{{ item.linkCollections.label }}</a></li>
+        <li><a class="link" href="item.linkCollections.url" target="_blank">{{ item.linkCollections.label }}</a></li>
       </ul>
     </div>
   </div>
