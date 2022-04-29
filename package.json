@@ -38,6 +38,7 @@
     "@angular/platform-browser-dynamic": "~13.3.3",
     "@angular/platform-server": "~13.3.3",
     "@angular/router": "~13.3.3",
+    "@angular/service-worker": "~13.3.3",
     "@nguniversal/express-engine": "^13.1.0",
     "@sentry/angular": "^6.19.6",
     "@sentry/tracing": "^6.19.6",
