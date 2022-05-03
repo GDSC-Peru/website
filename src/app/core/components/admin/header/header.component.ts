@@ -7,22 +7,22 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 	menu = [
-		{
-			label: 'Agenda',
-			url: '/agenda'
-		},
-		{
-			label: 'Speakers',
-			url: '/speakers'
-		},
-		{
-			label: 'Sponsors',
-			url: '#sponsors'
-		},
-		{
-			label: 'Equipo',
-			url: '/equipo'
-		},
+		// {
+		// 	label: 'Agenda',
+		// 	url: '/agenda'
+		// },
+		// {
+		// 	label: 'Speakers',
+		// 	url: '/speakers'
+		// },
+		// {
+		// 	label: 'Sponsors',
+		// 	url: '#sponsors'
+		// },
+		// {
+		// 	label: 'Equipo',
+		// 	url: '/equipo'
+		// },
 		{
 			label: 'Código de conducta',
 			url: '#code'

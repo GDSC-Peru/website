@@ -62,8 +62,8 @@ export class HomeComponent {
 	speakersCountStop: any = setInterval(() => {
 		this.speakersCount++;
 
-		if (this.speakersCount == 61) {
-			this.speakersCount = 0;
+		if (this.speakersCount == 40) {
+			clearInterval(this.speakersCountStop);
 		}
 
 	}, 100);
@@ -73,8 +73,8 @@ export class HomeComponent {
 	sponsorCountStop: any = setInterval(() => {
 		this.sponsorCount++;
 
-		if (this.sponsorCount == 21) {
-			this.sponsorCount = 0;
+		if (this.sponsorCount == 1) {
+			clearInterval(this.sponsorCountStop);
 		}
 
 	}, 180);
@@ -84,8 +84,8 @@ export class HomeComponent {
 	ssesionesCountStop: any = setInterval(() => {
 		this.ssesionesCount++;
 
-		if (this.ssesionesCount == 31) {
-			this.ssesionesCount = 0;
+		if (this.ssesionesCount == 36) {
+			clearInterval(this.ssesionesCountStop);
 		}
 
 	}, 250);
@@ -95,8 +95,8 @@ export class HomeComponent {
 	daysCountStop: any = setInterval(() => {
 		this.daysCount++;
 
-		if (this.daysCount == 3) {
-			this.daysCount = 0;
+		if (this.daysCount == 2) {
+			clearInterval(this.daysCountStop);
 		}
 
 	}, 300);
