@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "gdsc-peru"
+  },
+  "targets": {
+    "gdsc-peru": {
+      "hosting": {
+        "website": [
+          "gdsc-peru"
+        ]
+      }
+    }
   }
 }

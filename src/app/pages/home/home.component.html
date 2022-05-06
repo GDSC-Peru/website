@@ -4,26 +4,19 @@
   </div>
   <div class="wrapper">
     <div class="main">
-      <div class="video-container">
-        <video autoplay loop muted oncanplay="this.play()" onloadedmetadata="this.muted = true">
-          <source src="./../../../assets/video/gdsc_fest_peru.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="container__content">
-        <img src="./../../../assets/icons/logo_gdsc.svg" alt="Logo GDSC" />
-        <h1 class="title">GDSC Fest Perú 2022</h1>
-        <p class="subtitle">21 y 22 de Mayo | Online</p>
-        <a class="action__button" target="_blank" href="https://www.eventbrite.com.pe/e/gdsc-fest-peru-2022-tickets-323358262267">
-          <p>Adquirir entradas</p>
-        </a>
-      </div>
+      <img src="./../../../assets/icons/logo_gdsc.svg" alt="Logo GDSC" />
+      <h1 class="title">GDSC Fest Perú 2022</h1>
+      <p class="subtitle">21 y 22 de Mayo | Online</p>
+      <a class="action__button" target="_blank" href="https://bit.ly/getTicketGDSCFestPeru2022">
+        <p>Adquirir entradas</p>
+      </a>
     </div>
     <div class="container__about">
       <div class="paragraph">
         <h2 class="title">¿Qué es GDSC Fest Perú?</h2>
         <p class="text">El GDSC Fest Perú es un evento organizado por los GDSC de Perú. En este evento reuniremos
-          diferentes speakers
-          para tocar temas de IOT, AI, Blockchain, Web, Mobile, Cloud.</p>
+          diferentes speakers para tocar temas de IOT, AI, Blockchain, Web, Mobile, Cloud, UI/UX, Gestión de proyectos y
+          empleabilidad.</p>
         <p class="text">Serán dos días llenos de talleres y sesiones en vivo.</p>
         <h2 class="title">¿Qué es GDSC?</h2>
         <p class="text">Los clubes de estudiantes de desarrolladores de Google (GDSC) son grupos comunitarios para
@@ -33,16 +26,16 @@
       </div>
       <div class="statistics">
         <div class="statistics__item">
-          <p class="value">{{speakersCount}}</p>
+          <p class="value">40</p>
           <small class="label">speakers</small>
         </div>
-        <div class="statistics__item">
-          <p class="value">{{sponsorCount}}</p>
+        <!-- <div class="statistics__item">
+          <p class="value">20</p>
           <small class="label">sponsors</small>
-        </div>
+        </div> -->
         <div class="statistics__item">
-          <p class="value">{{ssesionesCount}}</p>
-          <small class="label">ssesiones</small>
+          <p class="value">36</p>
+          <small class="label">sesiones</small>
         </div>
         <div class="statistics__item">
           <p class="value">{{daysCount}}</p>
@@ -54,13 +47,13 @@
     </div>
     <div class="container__sponsors">
       <h2 class="title">Sponsors</h2>
-      <p class="paragraph">¿Interesado en ser sponsor de este evento? Ponte en contacto con nosotros completando nuestro
-        formulario <a href="#">aquí</a>.
+      <p class="paragraph">¿Interesado en ser sponsor de este evento? Ponte en contacto con nosotros <a
+          href="#">aquí</a>.
       </p>
       <h3 class="subtitle">Organizadores</h3>
       <div class="box__organizer">
         <div *ngFor="let item of organizer" class="organizer__item">
-          <a [href]="item.url">
+          <a [href]="item.url" target="_blank">
             <img class="item__img" [src]="item.img" [alt]="item.label" />
           </a>
         </div>
@@ -80,7 +73,7 @@
     <div class="container__slogan">
       <p class="slogan">¡Únete a este evento y aprende cosas nuevas!</p>
     </div>
-    <div class="container__codeOfConduct">
+    <div class="container__codeOfConduct" id="code">
       <h2 class="title">Código de conducta</h2>
       <div class="row">
         <div class="paragraph">
