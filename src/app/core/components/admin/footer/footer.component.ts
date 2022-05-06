@@ -42,11 +42,11 @@ export class FooterComponent {
 				{
 					label: 'Instagram',
 					url: 'https://www.instagram.com/gdsc.peru/'
-				},
-				{
-					label: 'Discord',
-					url: 'https://discord.gg/ucEwtbuK2a'
 				}
+				// {
+				// 	label: 'Discord',
+				// 	url: 'https://discord.gg/ucEwtbuK2a'
+				// }
 			]
 		},
 		{
