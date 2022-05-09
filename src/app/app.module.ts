@@ -8,7 +8,6 @@ import { Router } from '@angular/router';
 import * as Sentry from '@sentry/angular';
 import { Integrations } from '@sentry/tracing';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -19,56 +18,72 @@ import { environment } from '../environments/environment';
 import { provideFunctions, getFunctions } from '@angular/fire/functions';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 Sentry.init({
-  dsn: environment.SENTRY_DNS,
-  integrations: [
-    new Integrations.BrowserTracing({
-      tracingOrigins: environment.TRACKING_ORIGIN,
-      routingInstrumentation: Sentry.routingInstrumentation,
-    }),
-  ],
+	dsn: environment.SENTRY_DNS,
+	integrations: [
+		new Integrations.BrowserTracing({
+			tracingOrigins: environment.TRACKING_ORIGIN,
+			routingInstrumentation: Sentry.routingInstrumentation
+		})
+	],
 
-  // We recommend adjusting this value in production, or using tracesSampler for finer control
-  tracesSampleRate: 1.0,
+	// We recommend adjusting this value in production, or using tracesSampler for finer control
+	tracesSampleRate: 1.0
 });
 
 const PROVIDERS = [
-  {
-    provide: ErrorHandler,
-    useValue: Sentry.createErrorHandler({
-      showDialog: true,
-    }),
-  },
-  {
-    provide: Sentry.TraceService,
-    deps: [Router],
-    useValue: undefined,
-  },
-  {
-    provide: APP_INITIALIZER,
-    useFactory: () => () => { },
-    deps: [Sentry.TraceService],
-    multi: true,
-  },
+	{
+		provide: ErrorHandler,
+		useValue: Sentry.createErrorHandler({
+			showDialog: true
+		})
+	},
+	{
+		provide: Sentry.TraceService,
+		deps: [ Router ],
+		useValue: undefined
+	},
+	{
+		provide: APP_INITIALIZER,
+		useFactory: () => () => {},
+		deps: [ Sentry.TraceService ],
+		multi: true
+	}
 ];
-const COMPONENTS = [AppComponent];
-const IMPORTS = [BrowserModule.withServerTransition({
-  appId: 'gdsc-website'
-}), AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule, BrowserAnimationsModule, CoreModule, PagesModule];
+const COMPONENTS = [ AppComponent ];
+const IMPORTS = [
+	SlickCarouselModule,
+	BrowserModule.withServerTransition({
+		appId: 'gdsc-website'
+	}),
+	AppRoutingModule,
+	FormsModule,
+	ReactiveFormsModule,
+	HttpClientModule,
+	BrowserAnimationsModule,
+	CoreModule,
+	PagesModule
+];
 
 @NgModule({
-  declarations: [...COMPONENTS],
-  imports: [...IMPORTS, provideFirebaseApp(() => initializeApp(environment.firebase)), provideFunctions(() => getFunctions()), ServiceWorkerModule.register('ngsw-worker.js', {
-  enabled: environment.production,
-  // Register the ServiceWorker as soon as the application is stable
-  // or after 30 seconds (whichever comes first).
-  registrationStrategy: 'registerWhenStable:30000'
-})],
-  providers: [...PROVIDERS],
-  bootstrap: [AppComponent],
+	declarations: [ ...COMPONENTS ],
+	imports: [
+		...IMPORTS,
+		provideFirebaseApp(() => initializeApp(environment.firebase)),
+		provideFunctions(() => getFunctions()),
+		ServiceWorkerModule.register('ngsw-worker.js', {
+			enabled: environment.production,
+			// Register the ServiceWorker as soon as the application is stable
+			// or after 30 seconds (whichever comes first).
+			registrationStrategy: 'registerWhenStable:30000'
+		})
+	],
+	providers: [ ...PROVIDERS ],
+	bootstrap: [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule {}
 
 enableProdMode();
 // platformBrowserDynamic()

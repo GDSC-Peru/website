@@ -3,15 +3,12 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { CoreModule } from './../core/core.module';
 import { SpeakersComponent } from './speakers/speakers.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
-const PAGES = [HomeComponent, SpeakersComponent];
-
+const PAGES = [ HomeComponent, SpeakersComponent ];
 
 @NgModule({
-  declarations: [...PAGES],
-  imports: [
-    CommonModule,
-    CoreModule
-  ]
+	declarations: [ ...PAGES ],
+	imports: [ CommonModule, CoreModule, SlickCarouselModule ]
 })
-export class PagesModule { }
+export class PagesModule {}

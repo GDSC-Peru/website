@@ -51,6 +51,13 @@
       </div>
     </div>
     <div class="container__speakers">
+      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let speaker of speakers" class="slide">
+          <img src="{{ speaker.photo }}" alt="" width="50%">
+          <p class="titleSpeaker">{{speaker.name}}</p>
+          <p class="descriptionSpeaker">{{speaker.description}}</p>
+        </div>
+      </ngx-slick-carousel>
     </div>
     <div class="container__sponsors">
       <h2 class="title">Sponsors</h2>

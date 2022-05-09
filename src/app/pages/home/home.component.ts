@@ -55,6 +55,74 @@ export class HomeComponent {
 		// 	]
 		// }
 	];
+
+	speakers = [
+		{
+			name: 'Bezael Pérez',
+			photo: './../../../assets/img/speakers/Bezael Pérez.png',
+			description: 'Google Developer Expert en Angular | Co-Org NgDominican'
+		},
+		{
+			name: 'Daniel Alexandro Lingan Caballero',
+			photo: './../../../assets/img/speakers/Daniel Alexandro Lingan Caballero.png',
+			description: 'Software Engineer at Globant'
+		},
+		{
+			name: 'Dinorah Tovar',
+			photo: './../../../assets/img/speakers/Dinorah Tovar.png',
+			description: 'Google Developer Expert en Android'
+		},
+		{
+			name: 'Enrique Devars',
+			photo: './../../../assets/img/speakers/Enrique Devars.png',
+			description: 'Frontend Developer y profesor en Platzi'
+		},
+		{
+			name: 'José Ricardo Chavarria López',
+			photo: './../../../assets/img/speakers/José Ricardo Chavarria López.png',
+			description: 'Frontend Developer | Google Developer Expert en Angular | Co-Org FlutterHN'
+		},
+		{
+			name: 'Laura Gutierrez',
+			photo: './../../../assets/img/speakers/Laura Gutierrez.png',
+			description: 'Data Analyst, Storyteller & Visualization Expert | Embajadora WTM'
+		},
+		{
+			name: 'Victoria Ubaldo',
+			photo: './../../../assets/img/speakers/Victoria Ubaldo.png',
+			description: 'SW Engineer & Data Analyst | Co-Org WTMLima & GDG Cloud Lima'
+		}
+	];
+	slideConfig = {
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					infinite: true,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
+	};
+
 	constructor() {}
 
 	speakersCount: number = 0;
@@ -65,7 +133,6 @@ export class HomeComponent {
 		if (this.speakersCount == 40) {
 			clearInterval(this.speakersCountStop);
 		}
-
 	}, 100);
 
 	sponsorCount: number = 0;
@@ -76,7 +143,6 @@ export class HomeComponent {
 		if (this.sponsorCount == 1) {
 			clearInterval(this.sponsorCountStop);
 		}
-
 	}, 180);
 
 	ssesionesCount: number = 0;
@@ -87,7 +153,6 @@ export class HomeComponent {
 		if (this.ssesionesCount == 36) {
 			clearInterval(this.ssesionesCountStop);
 		}
-
 	}, 250);
 
 	daysCount: number = 0;
@@ -98,6 +163,5 @@ export class HomeComponent {
 		if (this.daysCount == 2) {
 			clearInterval(this.daysCountStop);
 		}
-
 	}, 300);
 }
