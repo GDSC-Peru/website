@@ -1,0 +1,58 @@
+.box {
+  max-width: 170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 8px;
+
+  p {
+    margin: 0px;
+  }
+}
+
+.iot {
+  border: 1px solid orange;
+  color: orange;
+}
+
+.ai {
+  border: 1px solid #da5d33;
+  color: #da5d33;
+}
+
+.blockchain {
+  border: 1px solid #da5d33;
+  color: #da5d33;
+}
+
+.web {
+  border: 1px solid #337eda;
+  color: #337eda;
+}
+
+.mobile {
+  border: 1px solid #278f48;
+  color: #278f48;
+}
+
+.cloud {
+  border: 1px solid #e72c1b;
+  color: #e72c1b;
+}
+
+.ui {
+  border: 1px solid #7c1ac2;
+  color: #7c1ac2;
+}
+
+.gestion {
+  border: 1px solid #dac20e;
+  color: #dac20e;
+}
+
+.empleabilidad {
+  border: 1px solid #da33a5;
+  color: #da33a5;
+}

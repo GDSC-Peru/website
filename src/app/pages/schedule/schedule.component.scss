@@ -1,0 +1,83 @@
+.container {
+
+  &__header {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+.wrapper {
+
+  .main {
+    padding: 100px;
+    color: #676c72;
+
+    .title {
+      font-size: 28px;
+      margin-bottom: 24px;
+    }
+
+    .schedule {
+
+      .tabs__schedule {
+        display: flex;
+
+        .tabs__item {
+          line-height: 2.5;
+          margin: 0px 12px 20px 12px;
+          cursor: pointer;
+        }
+
+        .active {
+          border-bottom: 3px solid #676c72;
+        }
+      }
+
+      .horary {
+        display: flex;
+        flex-direction: column;
+
+        .card__event {
+          border: 1px solid #E2E2E2;
+          border-radius: 12px;
+          padding: 16px;
+          width: 100%;
+          margin: 8px 0;
+
+          .title {
+            width: 100%;
+            border-bottom: 3px solid #676c72;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            line-height: 1.5;
+          }
+
+          .speaker {
+            display: flex;
+            margin: 20px 0;
+
+            .photo {
+              height: 70px;
+              width: 70px;
+            }
+
+            .name {
+              margin-left: 12px;
+            }
+
+          }
+
+          .talk__description {
+            margin: 12px 0;
+          }
+
+          .timetable {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

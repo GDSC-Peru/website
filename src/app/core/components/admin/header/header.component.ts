@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 	menu = [
-		// {
-		// 	label: 'Agenda',
-		// 	url: '/agenda'
-		// },
+		{
+			label: 'Agenda',
+			url: '/#/agenda'
+		},
 		// {
 		// 	label: 'Speakers',
 		// 	url: '/speakers'

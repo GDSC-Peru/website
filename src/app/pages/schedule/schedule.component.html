@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="container__header">
+    <app-header></app-header>
+  </div>
+  <div class="wrapper">
+    <div class="main">
+      <h1 class="title">Agenda</h1>
+      <div class="schedule">
+        <div class="tabs__schedule">
+          <div class="tabs__item" (click)="dayActive = 0" [ngClass]="{active: dayActive === 0}">
+            21 de Mayo
+          </div>
+          <div class="tabs__item" (click)="dayActive = 1" [ngClass]="{active: dayActive === 1}">
+            22 de Mayo
+          </div>
+        </div>
+        <div class="horary">
+          <div class="card__event">
+            <p class="title">Bienvenida</p>
+            <small class="timetable">9:30 am</small>
+          </div>
+          <ng-container *ngIf="dayActive === 0">
+            <div class="card__event" *ngFor="let item of scheduleDayOne">
+              <p class="title">{{item.talk}}</p>
+              <small class="timetable">{{item.time}}</small>
+              <div class="speaker">
+                <img class="photo" *ngIf="item.photo" [src]="item.photo" [alt]="item.speaker" />
+                <p class="name">{{item.speaker}}</p>
+              </div>
+              <p class="talk__description">
+                {{item.description}}
+              </p>
+              <app-talk-category [type]="item.category"></app-talk-category>
+            </div>
+          </ng-container>
+          <ng-container *ngIf="dayActive === 1">
+            <div class="card__event" *ngFor="let item of scheduleDayTwo">
+              <p class="title">{{item.talk}}</p>
+              <small class="timetable">{{item.time}}</small>
+              <div class="speaker">
+                <img class="photo" *ngIf="item.photo" [src]="item.photo" [alt]="item.speaker" />
+                <p class="name">{{item.speaker}}</p>
+              </div>
+              <p class="talk__description">
+                {{item.description}}
+              </p>
+              <app-talk-category [type]="item.category"></app-talk-category>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="container__footer">
+    <app-footer></app-footer>
+  </div>
+</div>
