@@ -78,12 +78,20 @@ export class TeamComponent {
 			description: 'Core Team Universidad San Luis Gonzaga'
 		},
 		{
+			name: 'Maria Sales',
+			description: 'Core Team Universidad Tecnológica del Perú'
+		},
+		{
 			name: 'Nolverth Huaman',
 			description: 'Core Team Universidad Tecnológica del Perú'
 		},
 		{
 			name: 'Pablo Ramos',
 			description: 'Core Team Universidad San Luis Gonzaga'
+		},
+		{
+			name: 'Pamela Aira',
+			description: 'Core Team Universidad Tecnológica del Perú'
 		},
 		{
 			name: 'Ruben Peralta',
