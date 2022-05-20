@@ -25,7 +25,7 @@ export class HeaderComponent {
 		// },
 		{
 			label: 'Equipo',
-			url: '/equipo'
+			url: '/#/team'
 		},
 		{
 			label: 'Código de conducta',

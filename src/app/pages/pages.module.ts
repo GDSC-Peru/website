@@ -5,11 +5,12 @@ import { CoreModule } from './../core/core.module';
 import { SpeakersComponent } from './speakers/speakers.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { TeamComponent } from './team/team.component';
 
-const PAGES = [ HomeComponent, SpeakersComponent ];
+const PAGES = [ HomeComponent, SpeakersComponent, ScheduleComponent, TeamComponent ];
 
 @NgModule({
-	declarations: [ ...PAGES, ScheduleComponent ],
+	declarations: [ ...PAGES ],
 	imports: [ CommonModule, CoreModule, SlickCarouselModule ]
 })
 export class PagesModule {}

@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { ScheduleComponent } from './pages/schedule/schedule.component';
 import { SpeakersComponent } from './pages/speakers/speakers.component';
+import { TeamComponent } from './pages/team/team.component';
 
 export const routes: Routes = [
 	{
@@ -18,6 +19,11 @@ export const routes: Routes = [
 	{
 		path: 'agenda',
 		component: ScheduleComponent,
+		pathMatch: 'full'
+	},
+	{
+		path: 'team',
+		component: TeamComponent,
 		pathMatch: 'full'
 	},
 	{
