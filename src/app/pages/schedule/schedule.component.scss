@@ -9,9 +9,22 @@
 
 .wrapper {
 
+  .banner {
+    background-image: url('./../../../assets/img/background-home.png');
+    background-position: center 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+  }
+
   .main {
-    padding: 100px;
+    padding: 50px 100px;
     color: #676c72;
+
+    @media screen and (max-width: 768px) {
+      padding: 20px 30px;
+    }
 
     .title {
       font-size: 28px;
@@ -44,6 +57,8 @@
           padding: 16px;
           width: 100%;
           margin: 8px 0;
+          box-sizing: border-box;
+
 
           .title {
             width: 100%;
@@ -65,6 +80,7 @@
 
             .name {
               margin-left: 12px;
+              font-weight: bold;
             }
 
           }

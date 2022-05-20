@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
 	menu = [
 		{
+			label: 'Inicio',
+			url: '/'
+		},
+		{
 			label: 'Agenda',
 			url: '/#/agenda'
 		},
@@ -19,10 +23,10 @@ export class HeaderComponent {
 		// 	label: 'Sponsors',
 		// 	url: '#sponsors'
 		// },
-		// {
-		// 	label: 'Equipo',
-		// 	url: '/equipo'
-		// },
+		{
+			label: 'Equipo',
+			url: '/equipo'
+		},
 		{
 			label: 'Código de conducta',
 			url: '#code'

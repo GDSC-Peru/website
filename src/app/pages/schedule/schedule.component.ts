@@ -8,7 +8,15 @@ import { Component } from '@angular/core';
 export class ScheduleComponent {
 	scheduleDayOne = [
 		{
-			talk: 'Nombre de la charla',
+			talk: 'Bienvenida',
+			speaker: null,
+			photo: null,
+			time: '09:30 am - 10:00 am',
+			description: null,
+			category: null
+		},
+		{
+			talk: 'Robots, primates y humanos: Inferencia Causal camino de la Inteligencia Artificial fuerte',
 			speaker: 'Andrés Leonardo Martinez',
 			photo: './../../../assets/img/speakers/Andrés Leonardo Martinez.png',
 			time: '10:00 am - 11:00 am',
@@ -17,7 +25,7 @@ export class ScheduleComponent {
 			category: 'AI'
 		},
 		{
-			talk: 'Nombre de la charla',
+			talk: 'Under the hood: Recomposition in Compose',
 			speaker: 'Dinorah Tovar',
 			photo: './../../../assets/img/speakers/Dinorah Tovar.png',
 			time: '11:00 am - 12:00 am',
@@ -61,21 +69,22 @@ export class ScheduleComponent {
 			category: 'AI'
 		},
 		{
-			talk: '¿Qué hay de nuevo viejo?: Flutter 3',
-			speaker: 'Pierre Guillen',
-			photo: './../../../assets/img/speakers/Pierre Guillen.png',
-			time: '16:00 pm - 17:00 pm',
-			description: 'Una introducción a la nueva versión del SDK de interfaces móviles de Google.',
-			category: 'Mobile'
+			talk: 'OKR: creando equipos altamente competitivos',
+			speaker: 'Niel Ugarte',
+			photo: './../../../assets/img/speakers/Niel Ugarte.png',
+			time: '16:00 am - 17:00 am',
+			description:
+				'Es un modelo de gestión que permite simplificar la creación de objetivos y su medición, haciendo más factible y práctico su alcance. Resuelve el común de los problemas: cómo alinear equipos y comprometerse con las prioridades de tu organización. ',
+			category: 'Gestión de proyectos'
 		},
-		// {
-		// 	talk: '',
-		// 	speaker: 'Laura Gutierrez',
-		// 	photo: './../../../assets/img/speakers/Laura Gutierrez.png',
-		// 	time: '17:00 pm - 18:00 pm',
-		// 	description: '',
-		// 	category: ''
-		// },
+		{
+			talk: 'Yo, mis datos y mi historia',
+			speaker: 'Laura Gutierrez',
+			photo: './../../../assets/img/speakers/Laura Gutierrez.png',
+			time: '17:00 pm - 18:00 pm',
+			description: '',
+			category: ''
+		},
 		{
 			talk: 'Web Vitals',
 			speaker: 'Vanessa Marely Aristizabal Angel',
@@ -96,14 +105,15 @@ export class ScheduleComponent {
 	];
 
 	scheduleDayTwo = [
-		// {
-		// 	talk: '',
-		// 	speaker: 'Mirina Gonzales',
-		// 	photo: './../../../assets/img/speakers/Mirina Gonzales.png',
-		// 	time: '10:00 am - 11:00 am',
-		// 	description: '',
-		// 	category: ''
-		// },
+		{
+			talk: 'Creando mi primer dashboard usando BigQuery y Data Studio',
+			speaker: 'Mirina Gonzales',
+			photo: './../../../assets/img/speakers/Mirina Gonzales.png',
+			time: '10:00 am - 11:00 am',
+			description:
+				'La presentación tiene como objetivo que los asistentes realicen sus primeros pasos trabajando con datos en GCP. Usaremos como fuente de datos BigQuery y Data Studio como herramienta de visualización.',
+			category: 'Cloud'
+		},
 		{
 			talk: '¿Como ser desarrollador de software y no morir en el intento?',
 			speaker: 'Daniel Alexandro Lingan Caballero',
@@ -117,40 +127,42 @@ export class ScheduleComponent {
 			talk: 'Break',
 			speaker: null,
 			photo: null,
-			time: '11:00 am - 12:00 am',
+			time: '12:00 pm - 13:00 pm',
 			description: null,
 			category: null
 		},
 		{
-			talk: '',
+			talk: 'Introducción a Angular',
 			speaker: 'Ricardo Chavarria',
 			photo: './../../../assets/img/speakers/Ricardo Chavarria.png',
 			time: '13:00 pm - 14:00 pm',
-			description: '',
+			description:
+				'Como iniciar con el poderoso frameworks de Angular. En esta charla daré a conocer algunos tips de cómo iniciar con Angular que podríamos crear con el y por qué se considera una plataforma y no un framework.',
 			category: 'Web'
 		},
 		{
 			talk: 'Blockchain Tendencias',
 			speaker: 'Renato Martin De La Rosa Castillo',
 			photo: './../../../assets/img/speakers/Renato Martin De La Rosa Castillo.png',
-			time: '11:00 am - 12:00 am',
+			time: '14:00 pm - 15:00 pm',
 			description:
-				'Comenzara con la breve reseña de la evolución de las cadenas de bloques, para luego sus características, ventajas y las tendencias asociadas a ella.',
+				'Comenzará con la breve reseña de la evolución de las cadenas de bloques, para luego sus características, ventajas y las tendencias asociadas a ella.',
 			category: 'Blockchain'
 		},
 		{
-			talk: '',
-			speaker: '',
-			photo: './../../../assets/img/speakers/ee.png',
-			time: '',
-			description: '',
+			talk: 'Haciendo una API en Node y Cloud Functions en 15 minutos',
+			speaker: 'Andres Villanueva',
+			photo: './../../../assets/img/speakers/Andres Villanueva.png',
+			time: '15:00 pm - 16:00 pm',
+			description:
+				'En esta charla vamos a estar hablando de cómo crear una API en Node usando el poder de Firebase Cloud Functions, comenzando desde la configuración hasta su despliegue en produccion.',
 			category: ''
 		},
 		{
 			talk: 'Firebase Storage con .NET, cómo hacer esta combinación?',
 			speaker: 'Christian Sánchez',
 			photo: './../../../assets/img/speakers/Christian Sánchez.png',
-			time: '11:00 am - 12:00 am',
+			time: '16:00 pm - 17:00 pm',
 			description:
 				'Más del 90% de proyectos de software usan imágenes, es por ello que está charla aprenderemos a subir archivos y otro contenido a Firebase Storage usando la tecnología .NET',
 			category: 'Web'
@@ -159,19 +171,18 @@ export class ScheduleComponent {
 			talk: '5 cosas que no te dicen en la universidad sobre ser Software Engineer',
 			speaker: 'Enrique Devars',
 			photo: './../../../assets/img/speakers/Enrique Devars.png',
-			time: '11:00 am - 12:00 am',
+			time: '17:00 pm - 18:00 pm',
 			description:
 				'Cuando iniciamos nuestras carreras profesionales creemos que el ser Software Engineers representa escribir el mejor sistema que exista, pero esto no es así. En esta charla te compartiré 5 cosas que han marcado la diferencia en mi carrera profesional para ser un mejor Software Engineer. ',
 			category: 'Software Development'
 		},
 		{
-			talk: 'OKR: creando equipos altamente competitivos',
-			speaker: 'Niel Ugarte',
-			photo: './../../../assets/img/speakers/Niel Ugarte.png',
-			time: '11:00 am - 12:00 am',
-			description:
-				'Es un modelo de gestión que permite simplificar la creación de objetivos y su medición, haciendo más factible y práctico su alcance. Resuelve el común de los problemas: cómo alinear equipos y comprometerse con las prioridades de tu organización. ',
-			category: 'Gestión de proyectos'
+			talk: '¿Qué hay de nuevo viejo?: Flutter 3',
+			speaker: 'Pierre Guillen',
+			photo: './../../../assets/img/speakers/Pierre Guillen.png',
+			time: '18:00 pm - 19:00 pm',
+			description: 'Una introducción a la nueva versión del SDK de interfaces móviles de Google.',
+			category: 'Mobile'
 		},
 		{
 			talk: 'Design OPS with Dev OPS',
@@ -181,6 +192,14 @@ export class ScheduleComponent {
 			description:
 				'Hablo de porque es importante que Dev Ops entienden como trabajan Diseñadores y como trabajar en conjuntos.',
 			category: 'Software Development'
+		},
+		{
+			talk: 'Clausura',
+			speaker: null,
+			photo: null,
+			time: '20:00 pm - 20:15 pm',
+			description: null,
+			category: null
 		}
 	];
 

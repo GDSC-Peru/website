@@ -3,6 +3,7 @@
     <app-header></app-header>
   </div>
   <div class="wrapper">
+    <div class="banner"></div>
     <div class="main">
       <h1 class="title">Agenda</h1>
       <div class="schedule">
@@ -15,10 +16,6 @@
           </div>
         </div>
         <div class="horary">
-          <div class="card__event">
-            <p class="title">Bienvenida</p>
-            <small class="timetable">9:30 am</small>
-          </div>
           <ng-container *ngIf="dayActive === 0">
             <div class="card__event" *ngFor="let item of scheduleDayOne">
               <p class="title">{{item.talk}}</p>
