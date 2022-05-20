@@ -151,8 +151,8 @@ export class ScheduleComponent {
 		},
 		{
 			talk: 'Haciendo una API en Node y Cloud Functions en 15 minutos',
-			speaker: 'Andres Villanueva',
-			photo: './../../../assets/img/speakers/Andres Villanueva.png',
+			speaker: 'Andrés Villanueva',
+			photo: './../../../assets/img/speakers/Andrés Villanueva.png',
 			time: '15:00 pm - 16:00 pm',
 			description:
 				'En esta charla vamos a estar hablando de cómo crear una API en Node usando el poder de Firebase Cloud Functions, comenzando desde la configuración hasta su despliegue en produccion.',
