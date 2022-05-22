@@ -152,7 +152,7 @@ export class ScheduleComponent {
 		{
 			talk: 'Reto Frontend: Creando una aplicación web en 1h',
 			speaker: 'Luis Eduardo',
-			photo: './../../../assets/img/team/Luis Eduardo.png',
+			photo: './../../../assets/img/team/Luis Perez.png',
 			time: '15:00 pm - 16:00 pm',
 			description: 'En esta charla vamos a estar creando una aplicación web usando Angular como framework',
 			category: ''
