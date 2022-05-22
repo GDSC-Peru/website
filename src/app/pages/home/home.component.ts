@@ -135,10 +135,9 @@ export class HomeComponent {
 				'Ingeniero de Sistemas y poseé un Magister en Inteligencia Artificial. Cuenta con 14 años de experiencia trabajando, para empresas del sector publico y privado, como Desarrollador, Analista Funcional y Líder Técnico.'
 		},
 		{
-			name: 'Andrés Villanueva',
-			photo: './../../../assets/img/speakers/Andrés Villanueva.png',
-			description:
-				'Andrés es Google Developer Expert en Firebase & Angular. Además es Software Engineer en Herodevs.'
+			name: 'Luis Eduardo',
+			photo: './../../../assets/img/team/Luis Eduardo.png',
+			description: 'Frontend Developer en Agora y GDSC Lead de la Universidad Tecnológica del Perú.'
 		},
 		{
 			name: 'Christian Sánchez',

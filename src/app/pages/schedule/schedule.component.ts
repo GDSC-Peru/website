@@ -150,12 +150,11 @@ export class ScheduleComponent {
 			category: 'Blockchain'
 		},
 		{
-			talk: 'Haciendo una API en Node y Cloud Functions en 15 minutos',
-			speaker: 'Andrés Villanueva',
-			photo: './../../../assets/img/speakers/Andrés Villanueva.png',
+			talk: 'Reto Frontend: Creando una aplicación web en 1h',
+			speaker: 'Luis Eduardo',
+			photo: './../../../assets/img/team/Luis Eduardo.png',
 			time: '15:00 pm - 16:00 pm',
-			description:
-				'En esta charla vamos a estar hablando de cómo crear una API en Node usando el poder de Firebase Cloud Functions, comenzando desde la configuración hasta su despliegue en produccion.',
+			description: 'En esta charla vamos a estar creando una aplicación web usando Angular como framework',
 			category: ''
 		},
 		{
