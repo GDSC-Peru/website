@@ -202,5 +202,5 @@ export class ScheduleComponent {
 		}
 	];
 
-	dayActive = 0;
+	dayActive = 1;
 }
